@@ -1,4 +1,16 @@
 // ============= HEADER =================
+$media($small-screen-up) {
+
+  h1 {
+    font-size: em(65);
+    color: orange;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 0 2px rgba(0, 5, 0, .94);
+    margin-top: 30px;
+    }
+
+
+}
 
 header {
   position: relative;
