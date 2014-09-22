@@ -5,6 +5,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>Team Assignment </title>
+    <link rel="icon" type="image/ico" href="/favicon.ico?v2">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="styles/vendor.css">
@@ -12,33 +15,109 @@
     <link rel="stylesheet" href="styles/main.css">
 
     <script src="scripts/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
   </head>
   <body>
-
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-
-        <li>Sass</li>
+    <div class="container">
 
 
-        <li>Modernizr</li>
+    <header>
+      <div class="content">
+        <img class="logo" src="/images/bike.png" />
+        <h1 class="company-name">SWAMP RABBIT CYCLING</h1>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hook">
+        <div class="content">
+          <p>Bringing you the best in cycling gear, equipment, and community since 1999!</p>
+        </div>
+      </section>
+
+      <section class="flickr-pics">
+        <ul class="bicycle-pics">
+        </ul>
+      </section>
+
+      <section class="description">
+        <div class="content">
+          <p>From mountain bikes to kids training wheels, we've got what you need. Come join us for our Saturday community events or just stop by to say hello!</p>
+        </div>
+      </section>
+
+      <div class="contact-info">
+        <div class="content">
+          <p>Visit, call or email us today and get the most out of your bike riding experience!</p>
+          <div class="phone"><span class="mega-octicon octicon-device-mobile"></span>
+202.555.0127</div>
+          <div class="email"><span class="mega-octicon octicon-mail"></span>
+SwampRabbitCycling@example.com</div>
+        </div>
+      </div>
+
+     <!-- Google Map API Test Section Below -->
+
+    <div class="map_container">
+        <div class="content">
+            <div id="map_canvas"></div>
+            <div id="map_street_view"></div>
+        </div><!-- .content -->
+    </div><!-- .map_container -->
+
+<div class="tweets_container">
+  <span class="tweet_title">Recent Tweets:</span>
+  <div id="tweets_container"></div><!-- #tweets_container -->
+</div><!-- .tweets_container -->
+
+    </main>
+
+    <footer>
+      <div class="footer">
+
+        <div class="hover-button"></div>
+        <div class="footer-container">
+          <div class="footer-container2">
+            <div class="footer-center">
+        	   <h3>&copy; 2014 Swamp Rabbit Cycling, LLC.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div><!-- container -->
 
 
-        <li>Bourbon & Neat</li>
+    <!-- FLICKR API template -->
+    <script type="text/template" id="templates-bicycle-pics">
+      <li class="bike-pic"><img src= "https://farm<%= farm %>.staticflickr.com/<%= server %>/<%= id %>_<%= secret %>.jpg"/></li>
+    </script>
+    <!-- end flickr api template -->
 
 
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
-    </div>
 
     <script src="scripts/vendor.js"></script>
 
+    <!-- Twitter fetcher -->
+    <script src="scripts/twitterFetcher_min.js"></script>
+    <!-- End Twitter fetcher -->
+
+    <!-- Google Maps API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=">
+    </script>
+    <!-- End Google Maps API -->
+
         <script src="scripts/main.js"></script>
+
+<script type="text/template" id="templates-bicycle-pics">
+  <li class="bike-pic"><img src= "https://farm<%= farm %>.staticflickr.com/<%= server %>/<%= id %>_<%= secret %>.jpg"/></li>
+</script>
+
+<!-- Google Maps API -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key="></script>
+<!-- End Google Maps API -->
+
+
 </body>
 </html>
